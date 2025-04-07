@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins&display=swap");
+
+/* Light Mode Defaults */
+body {
+  font-family: "Lato", serif;
+  padding: 0;
+  margin: 0;
+}
+
+html:not(.dark-mode) {
+  background-color: hsl(240, 88%, 97%);
+}
+
+/* Header Styles */
+h1 {
+  margin-left: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Input, Textarea, Select, and Chips */
+input.p-inputtext,
+textarea.p-textarea,
+.p-select,
+.p-inputchips {
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  padding: 16px;
+ --p-inputtext-focus-ring-color: var(--p-primary-color);
+ --p-inputtext-focus-ring-width: 2px;
+ --p-inputtext-focus-ring-style: solid;
+ --p-textarea-focus-ring-color: var(--p-primary-color);
+ --p-textarea-focus-ring-width: 2px;
+ --p-textarea-focus-ring-style: solid;
+ --p-select-focus-ring-color: var(--p-primary-color);
+ --p-select-focus-ring-width: 2px;
+ --p-select-focus-ring-style: solid;
+  transition: all 0.2s;
+}
+
+/* Buttons */
+button.p-button:not(.p-button-link) {
+  border-radius: 2rem;
+}
+
+/* Labels */
+label {
+  --p-floatlabel-on-border-radius: 2rem;
+  --p-floatlabel-on-active-padding: 4px 8px;
+  position: relative;
+  margin-left: 1em;
+}
+
+/* Floating Label */
+.p-floatlabel label:before {
+  content: "";
+  position: absolute;
+  transition: all 0.2s;
+  inset: 0;
+  outline: 0px solid transparent;
+  border-radius: 2rem;
+  clip-path: inset(-2px -2px 50% -2px);
+}
+
+.p-floatlabel:has(*:focus) label:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  outline: 2px solid var(--p-primary-color);
+  border-radius: 2rem;
+  clip-path: inset(-2px -2px 50% -2px);
+}
+
+.p-select-label {
+  padding: 0 !important;
+}
+
+.p-select-overlay {
+  z-index: 9999999 !important;
+}
+
+.p-drawer-mask {
+  z-index: 99999999999 !important;
+}
+
+.p-select .p-select-clear-icon{
+  margin-right: 1em;
+}
+
+
+
+
+
+
+
+
