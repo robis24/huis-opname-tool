@@ -66,7 +66,6 @@ watch(
 
     editor.value?.commands.setContent(value, false);
 
-    //|| props.isText ? texts?.value?.[props.field.replace("text_")] : ""
   },
   {
     immediate: true,
