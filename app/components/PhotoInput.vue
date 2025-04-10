@@ -154,22 +154,6 @@ onUnmounted(() => {
   window.removeEventListener("offline", () => (isOnline.value = false));
 });
 
-// Sync offline files when back online
-// async function syncOfflineData() {
-//   const keys = await fileStore.keys();
-//   for (const key of keys) {
-//     const data = await fileStore.getItem<{
-//       metadata: any;
-//       dataURL: string;
-//       file: File;
-//       synced: boolean;
-//     }>(key);
-//     if (data?.file && !data.synced) {
-//       console.log("Syncing file:", data.metadata.name, key);
-//       await uploadFile(data.file);
-//     }
-//   }
-// }
 </script>
 
 <template>
