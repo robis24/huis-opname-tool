@@ -23,6 +23,10 @@ const MyPreset = definePreset(Aura, {
 });
 
 export default defineNuxtConfig({
+  crmIntegration: {
+    enabled: "example",
+  },
+
   ssr: false,
 
   future: {
@@ -60,6 +64,9 @@ export default defineNuxtConfig({
           cssLayer: false,
         },
       },
+    },
+    components: {
+      exclude: ["Form", "FormField"],
     },
   },
   pwa: {
